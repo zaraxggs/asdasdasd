@@ -23,7 +23,7 @@ RUN wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip \
     && rm ngrok-stable-linux-amd64.zip
 
 # Poner tu token de ngrok
-RUN ngrok authtoken TU_NGROK_TOKEN
+RUN ngrok authtoken 2jE5OMl0nKwBhf4iWLdOdfdt9SQ_vLbWgXMSMJZobeJ7STLQ
 
 # Exponer puerto (aunque Render Free no lo abra al público)
 EXPOSE 25565
