@@ -4,8 +4,10 @@ FROM openjdk:17-jdk-slim
 # Carpeta del servidor
 WORKDIR /minecraft
 
-# Descargar automáticamente el server.jar
+# Instalar wget
 RUN apt-get update && apt-get install -y wget
+
+# Descargar automáticamente el server.jar
 RUN wget https://piston-data.mojang.com/v1/objects/a0d03225615ba897619220e256a266cb33a44b6b/server.jar -O server.jar
 
 # Copiar eula.txt
